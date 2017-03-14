@@ -1,0 +1,18 @@
+{
+  "name": "types-ui-example",
+  "version": "0.0.6",
+  "private": false,
+  "main": "dist/app.js",
+  "scripts": {
+    "compile": "rm -rf dist/ && ./node_modules/typescript/bin/tsc",
+    "build": "npm run compile",
+    "start": "budo ./dist/main.js  --serve bundle.js --live",
+    "package": "browserify ./dist/demo.js -o bundle.js"
+  },
+  "dependencies": {
+    "types-ui": "0.0.6"
+  },
+  "directories": [
+    "dist"
+  ]
+}
