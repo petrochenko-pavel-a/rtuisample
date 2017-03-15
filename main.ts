@@ -12,7 +12,7 @@ const person={
         age:"number"
     },
     required:["name","lastName"],
-    representation: { "hc(grab,eq)":[ { vc: ["name","lastName","age"]}, {"list-only":"skills"} ]}
+    representation: { "hc(grab,eq)":[ { vc: ["name","lastName","age"]}, "skills" ]}
 
 }
 const value={
